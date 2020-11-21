@@ -1,8 +1,6 @@
-const content; 
-fs.writeFile("./")
+const fs = require("fs");
 
-
-const inquirer = require("READMEgen");
+const inquirer = require("inquirer");
 
 inquirer
     .prompt([{
@@ -53,6 +51,5 @@ inquirer
     ])
 
     .then((response) =>
-    r
-
+        console.log(response)
     )
