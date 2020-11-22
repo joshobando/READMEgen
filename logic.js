@@ -8,11 +8,13 @@ inquirer
             type: "input",
             message: "What is your GitHub username?",
             name: "username",
+            default: "joshobando",
         },
         {
             type: "input",
             message: "What is your email address?",
             name: "email",
+            default: "joshua.obando98@gmail.com"
         },
         {
             type: "input",
