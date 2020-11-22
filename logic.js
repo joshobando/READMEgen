@@ -1,5 +1,5 @@
 const fs = require("fs")
-const util = require("util")
+
 const inquirer = require("inquirer");
 
 inquirer
@@ -67,5 +67,3 @@ function writetofile(filename, data) {
         }
     });
 }
-
-const writeFile = util.promisify(writetofile);
