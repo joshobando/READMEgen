@@ -66,9 +66,11 @@ const util = require("util");
 function writetofile(READMEgen, data) {
     fs.writeFile(READMEgen, data, error => {
         if (error) {
-            return console.log(error);
+            return (error);
         }
     });
 }
+
+fs.appendFile()
 
 const writeFileAsync = util.promisify(fs.writeFile);
