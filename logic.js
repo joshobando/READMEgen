@@ -1,11 +1,9 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const util = require("util");
+const path = require("path");
+const createMarkDown  = require("./createMarkDown");
 
-
-
-// const promptUser = () => 
-    inquirer.prompt([
+inquirer.prompt([
     {    
         type: "input",
         message: "What is your GitHub username?",
@@ -61,16 +59,7 @@ const util = require("util");
         name: "contributing",
         default: "Not sure yet",
     },
-    ]);
-
-function writetofile(READMEgen, data) {
-    fs.writeFile(READMEgen, data, error => {
-        if (error) {
-            return (error);
-        }
+    ]).then((answers) => {
+        console.log(answers);
+        fs.writeFileSync(path.join(process.cwd(),"README.md"), createMarkDown(answers));
     });
-}
-
-fs.appendFile()
-
-const writeFileAsync = util.promisify(fs.writeFile);
