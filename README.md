@@ -1,5 +1,5 @@
 
-![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+![GitHub license](https://img.shields.io/badge/license-None-blue.svg)
 
 ## Description
 
@@ -15,7 +15,7 @@ READMEgen homework
 
 #License
 
-MIT
+None
 
 #Install
 ```
